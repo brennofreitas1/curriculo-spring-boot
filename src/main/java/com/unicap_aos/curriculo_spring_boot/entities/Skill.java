@@ -51,4 +51,12 @@ public class Skill {
         this.proficiency = proficiency;
     }
 
+    public Personal getPersonal() {
+        return personal;
+    }
+
+    public void setPersonal(Personal personal) {
+        this.personal = personal;
+    }
+
 }

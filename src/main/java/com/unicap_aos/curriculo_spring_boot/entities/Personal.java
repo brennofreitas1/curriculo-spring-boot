@@ -93,4 +93,28 @@ public class Personal {
         this.address = address;
     }
 
+    public List<Education> getEducation() {
+        return education;
+    }
+
+    public void setEducation(List<Education> education) {
+        this.education = education;
+    }
+
+    public List<Experience> getExperience() {
+        return experience;
+    }
+
+    public void setExperience(List<Experience> experience) {
+        this.experience = experience;
+    }
+
+    public List<Skill> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(List<Skill> skills) {
+        this.skills = skills;
+    }
+
 }

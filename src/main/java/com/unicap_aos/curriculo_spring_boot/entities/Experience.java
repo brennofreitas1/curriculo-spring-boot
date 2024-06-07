@@ -84,4 +84,12 @@ public class Experience {
         this.description = description;
     }
 
+    public Personal getPersonal() {
+        return personal;
+    }
+
+    public void setPersonal(Personal personal) {
+        this.personal = personal;
+    }
+
 }

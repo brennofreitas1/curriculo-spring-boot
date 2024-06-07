@@ -73,4 +73,12 @@ public class Education {
         this.endDate = endDate;
     }
 
+    public Personal getPersonal() {
+        return personal;
+    }
+
+    public void setPersonal(Personal personal) {
+        this.personal = personal;
+    }
+
 }
