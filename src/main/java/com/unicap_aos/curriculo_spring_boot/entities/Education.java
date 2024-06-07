@@ -1,19 +1,37 @@
 package com.unicap_aos.curriculo_spring_boot.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Education {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String institutionName;
+
+    @Column(nullable = false)
     private String degree;
+
+    @Column(nullable = false)
     private String startDate;
+
+    @Column(nullable = false)
     private String endDate;
+
+    @ManyToOne
+    @JoinColumn(name = "personal_id", referencedColumnName = "id")
+    @JsonBackReference
+    private Personal personal;
 
     public Long getId() {
         return id;
